@@ -1,0 +1,122 @@
+
+.content {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+}
+.banner {
+	width: 100%;
+	height: auto;
+}
+.banner .lunbo {
+	width: 100%;
+	height: 400rpx;
+}
+.banner .classic {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	padding: 0 1rem;
+	padding-top: .8rem;
+	padding-bottom: .6rem;
+}
+.banner .classic .clumn {
+	text-align: center;
+}
+.banner .classic .clumn .img {
+	width: 2.2rem;
+	height: 2.2rem;
+	border-radius: 50%;
+	overflow: hidden;
+	text-align: center;
+	display: inline-block;
+}
+.banner .classic .clumn .img image {
+	width: 2.2rem;
+	height: 2.2rem;
+}
+.banner .classic .clumn text {
+	font-size: .6rem;
+	color: rgba(51, 51, 51, 1);
+	line-height: 1.5;
+	margin-top: .4rem;
+	display: block;
+}
+.banner .guanggao {
+	width: 100%;
+	margin: 0;
+	z-index: 1;
+	border-bottom: .6rem solid #eee;
+	box-sizing: content-box;
+	height: 5rem;
+}
+.banner .guanggao image {
+	height: 5rem;
+	width: 100%;
+}
+.banner .row {
+	height: 57px;
+	border-bottom: 1px solid #ddd;
+	padding: 20.5px;
+}
+.banner .row .row1 {
+	height: 28px;
+	line-height: 28px;
+}
+.banner .row .row1 .left {
+	width: 74%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 1;
+	float: left;
+}
+.banner .row .row1 .right {
+	float: right;
+	color: #ff660d;
+	text-align: center;
+}
+.banner .row .row2 {
+	height: 28px;
+	line-height: 28px;
+	font-size: 15px;
+	color: #9c9c9c;
+}
+.banner .row text {
+	font-size: 14px;
+}
+.banner .row .row2 text:first-child {
+	margin-right: 10px;
+}
+.banner .loadmoring {
+	font-size: 15px;
+	color: #555555;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+}
+.banner .loadmored {
+	font-size: 15px;
+	color: #555555;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+}
+

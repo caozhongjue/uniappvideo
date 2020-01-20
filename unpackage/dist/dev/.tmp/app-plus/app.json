@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/search/search",
+    "pages/profile/profile",
+    "pages/common/common",
+    "pages/zhizhao/zhizhao",
+    "pages/miaorenwu/miaorenwu",
+    "pages/detail/detail"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#bfbfbf",
+    "selectedColor": "#515151",
+    "borderStyle": "black",
+    "backgroundColor": "#FFFFFF",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "static/tabBarIco/index.png",
+        "selectedIconPath": "static/tabBarIco/index_sel.png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "搜索",
+        "iconPath": "static/tabBarIco/search.png",
+        "selectedIconPath": "static/tabBarIco/search_sel.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "关于",
+        "iconPath": "static/tabBarIco/me.png",
+        "selectedIconPath": "static/tabBarIco/me_sel.png"
+      }
+    ]
+  },
+  "nvueCompiler": "uni-app",
+  "renderer": "auto",
+  "splashscreen": {
+    "alwaysShowBeforeRender": true,
+    "autoclose": false
+  },
+  "appname": "unidemo",
+  "compilerVersion": "2.5.1",
+  "usingComponents": {}
+}

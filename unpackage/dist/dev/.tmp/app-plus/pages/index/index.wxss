@@ -1,0 +1,230 @@
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.content {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+}
+.banner {
+	width: 100%;
+	height: auto;
+}
+.banner .lunbo {
+	width: 100%;
+	height: 400rpx;
+}
+.banner .classic {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	padding: 0 1rem;
+	padding-top: .8rem;
+	padding-bottom: .6rem;
+}
+.banner .classic .clumn {
+	text-align: center;
+}
+.banner .classic .clumn .img {
+	width: 2.2rem;
+	height: 2.2rem;
+	border-radius: 50%;
+	overflow: hidden;
+	text-align: center;
+	display: inline-block;
+}
+.banner .classic .clumn .img image {
+	width: 2.2rem;
+	height: 2.2rem;
+}
+.banner .classic .clumn text {
+	font-size: .6rem;
+	color: rgba(51, 51, 51, 1);
+	line-height: 1.5;
+	margin-top: .4rem;
+	display: block;
+}
+.banner .guanggao {
+	width: 100%;
+	margin: 0;
+	z-index: 1;
+	border-bottom: .6rem solid #eee;
+	box-sizing: content-box;
+	height: 5rem;
+}
+.banner .guanggao image {
+	height: 5rem;
+	width: 100%;
+}
+.banner .row {
+	border-bottom: 1px solid #ddd;
+	padding: 20.5px;
+}
+.banner .row .row1 {
+	line-height: 1.1rem;
+}
+.banner .row .row1 .left {
+	width: 74%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 1;
+	float: left;
+}
+.banner .row .row1 .right {
+	float: right;
+	color: #ff660d;
+	text-align: center;
+}
+.banner .row .row2 {
+	font-size: .6rem;
+	margin: .4rem 0 0;
+	color: #9c9c9c;
+}
+.banner .row text {
+	font-size: 14px;
+}
+.banner .row .row2 text:first-child {
+	margin-right: 10px;
+}
+.banner .row .row3 text {
+	font-size: .55rem;
+	margin-top: .4rem;
+	color: #999999;
+	padding: .15rem .2rem;
+	margin-right: .8rem;
+	border-radius: 4px;
+	background-color: rgba(245, 245, 245, 1);
+}
+.banner .row .row3 image {
+	width: 2rem;
+	height: 1rem;
+	vertical-align: middle;
+	float: right;
+}
+.banner .loadmoring {
+	font-size: 15px;
+	color: #555555;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+}
+.banner .loadmored {
+	font-size: 15px;
+	color: #555555;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+}
+.loader {
+	position: relative;
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+.demo3 {
+	width: 4px;
+	height: 4px;
+	border-radius: 2px;
+	background: #68b2ce;
+	position: absolute;
+	animation: demo3 linear 0.8s infinite;
+	-webkit-animation: demo3 linear 0.8s infinite;
+}
+.demo3:nth-child(1) {
+	left: 15px;
+	top: 2px;
+	-webkit-animation-delay: 0s;
+	        animation-delay: 0s;
+}
+.demo3:nth-child(2) {
+	left: 24px;
+	top: 6px;
+	-webkit-animation-delay: 0.1s;
+	        animation-delay: 0.1s;
+}
+.demo3:nth-child(3) {
+	left: 27px;
+	top: 15px;
+	-webkit-animation-delay: 0.1s;
+	        animation-delay: 0.1s;
+}
+.demo3:nth-child(4) {
+	left: 23px;
+	top: 24px;
+	-webkit-animation-delay: 0.2s;
+	        animation-delay: 0.2s;
+}
+.demo3:nth-child(5) {
+	left: 15px;
+	top: 26px;
+	-webkit-animation-delay: 0.3s;
+	        animation-delay: 0.3s;
+}
+.demo3:nth-child(6) {
+	left: 6px;
+	top: 23px;
+	-webkit-animation-delay: 0.4s;
+	        animation-delay: 0.4s;
+}
+.demo3:nth-child(7) {
+	left: 2px;
+	top: 15px;
+	-webkit-animation-delay: 0.5s;
+	        animation-delay: 0.5s;
+}
+.demo3:nth-child(8) {
+	left: 6px;
+	top: 6px;
+	-webkit-animation-delay: 0.6s;
+	        animation-delay: 0.6s;
+}
+@keyframes demo3 {
+0%,
+	40%,
+	100% {
+		-webkit-transform: scale(1);
+		        transform: scale(1);
+}
+20% {
+		-webkit-transform: scale(2);
+		        transform: scale(2);
+}
+}
+@-webkit-keyframes demo3 {
+0%,
+	40%,
+	100% {
+		-webkit-transform: scale(1);
+		        transform: scale(1);
+}
+20% {
+		-webkit-transform: scale(2);
+		        transform: scale(2);
+}
+}
+

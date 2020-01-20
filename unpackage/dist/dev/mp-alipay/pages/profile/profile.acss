@@ -1,0 +1,33 @@
+
+.content{
+	width:100%;
+	height: auto;
+}
+.status_bar {
+	height: 25px;  
+	width: 100%;  
+	background-color: #F8F8F8;
+}
+.top_view {  
+	height: 25px;  
+	width: 100%;  
+	position: fixed;  
+	background-color: #F8F8F8;  
+	top: 0;  
+	z-index: 999;
+}
+.content .title{
+	
+	text-align: center;
+}
+.content .desc{
+	font-size: 15px;
+	padding: 0 8px;
+	padding-top: 5px;
+	text-indent: 25px;
+}
+.content .desc text{
+	
+	line-height: 25px;
+}
+

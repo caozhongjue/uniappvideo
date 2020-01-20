@@ -1,0 +1,2 @@
+setCssToHead([".",[1],"content{ text-align: center; -webkit-box-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-box-align: center; -webkit-align-items: center; align-items: center; }\n",],undefined,{path:"./pages/search/search.wxss"})();
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/search/search.wxml') } }));

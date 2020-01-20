@@ -1,0 +1,66 @@
+<template>
+	<view class="content">
+		<view class="status_bar">  
+		    <view class="top_view"></view>  
+		</view>
+		<view class="title">数据来源兼职猫</view>
+		<view class="desc">
+			<text >本个案例用uniapp做的界面，接口没有好的，只有找到兼职猫上的，其它的藏得太好了，拿不到。兼职猫这个接口不太好，有空去找个多数据的接口才行。</text>
+		</view>
+		<view class="desc">
+			<text >本来想做成小程序的，但首页那个数据的api接口在小程序上出问题，拿不到数据，只能玩玩android和h5了</text>
+		</view>
+	</view>
+</template>
+
+<script>
+	export default {
+		data() {
+			return {
+				
+			}
+		},
+		onLoad(){
+			
+		},
+		
+		methods: {
+			
+		}
+	}
+</script>
+
+<style>
+	.content{
+		width:100%;
+		height: auto;
+		
+	}
+	.status_bar {
+		height: var(--status-bar-height);  
+		width: 100%;  
+		background-color: #F8F8F8;  
+	}  
+	.top_view {  
+		height: var(--status-bar-height);  
+		width: 100%;  
+		position: fixed;  
+		background-color: #F8F8F8;  
+		top: 0;  
+		z-index: 999;  
+	}
+	.content .title{
+		
+		text-align: center;
+	}
+	.content .desc{
+		font-size: 15px;
+		padding: 0 8px;
+		padding-top: 5px;
+		text-indent: 25px;
+	}
+	.content .desc text{
+		
+		line-height: 25px;
+	}
+</style>

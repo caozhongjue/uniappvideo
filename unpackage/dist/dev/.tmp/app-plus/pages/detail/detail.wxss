@@ -1,0 +1,121 @@
+
+.clearfix:after{
+     content:".";        
+     display:block;        
+     height:0;        
+     clear:both;        
+     visibility:hidden;
+}
+.top{
+	padding-bottom: .5rem ;
+	background-color: rgba(239,239,244,1);
+}
+.row1 {
+	padding: .5rem;
+	
+	background-color: #FFFFFF;
+}
+.row1 .title{
+	display: block;
+	font-weight: 400;
+	font-size: .85rem;
+	color: #3f3f3f;
+	margin-bottom: .5rem;
+}
+.row1 .title .price{
+	margin-left: 8px;
+	color: #f57400;
+}
+.row1 .time{
+	font-size: .7rem;
+	line-height: 1.8em;
+	color: #a5a5a5;
+}
+.row1 .time .left{
+	width: 70%;
+	float: left;
+}
+.row1 .time .timeleft{
+	color: #3F3F3F;
+	margin-left: 8px;
+}
+.row1 .shuoming{
+	position: relative;
+	height: 1rem;
+	margin-top: .5rem;
+	width: 100%;
+	font-size: .65rem;
+	color: #FE7418;
+}
+.row2{
+	padding: .5rem;
+	background-color: #FFFFFF;
+}
+.row2 .title{
+	display: block;
+	margin-bottom: .25rem;
+	color: #3F3F3F;
+	font-size: .75rem;
+	font-weight: 400;
+	line-height: 1.5em;
+}
+.row2 .titledetail{
+	font-size: .75rem;
+	line-height: 2em;
+	color: #3F3F3F;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+.row2 .titledetail ._pre{
+	white-space: pre-wrap;
+	font-family: inherit;
+	font-size: 1em;
+}
+.row3{
+	padding: .5rem;
+	background-color: #FFFFFF;
+}
+.row3 .title{
+	display: block;
+	margin-bottom: .25rem;
+	color: #3F3F3F;
+	font-size: .75rem;
+	font-weight: 400;
+	line-height: 1.5em;
+}
+.row3 .shuomingdetial{
+	position: relative;
+	padding-left: 2.4rem;
+}
+.row3 .shuomingdetial .leftimg{
+	width: 2.2rem;
+	position: absolute;
+	left:0;
+	top: 6px;
+	height: 16px;
+}
+.row3 .shuomingdetial .right{
+	position: relative;
+	overflow: hidden;
+	padding-left: 14px;
+	line-height: 1.6;
+	padding-bottom: .5rem;
+}
+.row3 .shuomingdetial .right text{
+	display: block;
+	font-size: 15px;
+	color: #3F3F3F;
+	font-weight: 400;
+	margin-top: 2px;
+}
+.row3 .shuomingdetial .right .img{
+	margin: .6rem -.5rem 0 0;
+	overflow: hidden;
+}
+.row3 .shuomingdetial .right .img image{
+	
+	width: 3.2rem;
+	height: 3.2rem;
+	margin: 0 .5rem .5rem 0;
+}
+

@@ -1,0 +1,333 @@
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.row1 .left {
+	width: 41.33%;
+	float: left;
+}
+.row1 .left image {
+	width: 100%;
+	height: 135px;
+	display: block;
+}
+.row1 .right {
+	float: right;
+	width: 58.67%;
+}
+.row1 .right .top,
+.row1 .right .top image {
+	width: 100%;
+	height: 67.5px;
+}
+.row1 .right .bottom,
+.row1 .right .bottom image {
+	width: 100%;
+	height: 67.5px;
+}
+.row1 .right .bottom .left,
+.row1 .right .bottom .right {
+	width: 50%;
+}
+.row22 {
+	background-color: rgb(239, 239, 244, 1);
+	padding-bottom: 8px;
+	position: relative;
+}
+.row22 .loc_box_con {
+	display: block;
+	position: absolute;
+	top: 2.2rem;
+	left: 0;
+	width: 100%;
+	z-index: 9;
+	background-color: #FFFFFF;
+}
+.row22 .loc_box_con view {
+	color: #333333;
+	font-size: .8rem;
+	width: 100%;
+	height: 2.2rem;
+	line-height: 2.2rem;
+	text-align: left;
+	border-bottom: 1px solid #efefef;
+	list-style: none;
+	text-indent: 1rem;
+	position: relative;
+}
+.row22 .loc_box_con view.active::before {
+	content: "";
+	background: url(https://img.jianzhimao.com/static/m3/static/css/img/cur.png?v=cbc9a46) right center no-repeat;
+	height: 100%;
+	width: 1.8rem;
+	background-size: .85rem;
+	position: absolute;
+	right: 1rem;
+	top: 0;
+}
+.row22 .m-sxsqe {
+	display: block;
+	position: absolute;
+	top: 2.2rem;
+	left: 0;
+	width: 100%;
+	z-index: 9;
+	background-color: #FFFFFF;
+}
+.row22 .m-sxsqe view {
+	color: #333333;
+	font-size: .8rem;
+	width: 100%;
+	height: 2.2rem;
+	line-height: 2.2rem;
+	text-align: left;
+	border-bottom: 1px solid #efefef;
+	list-style: none;
+	text-indent: 1rem;
+	position: relative;
+}
+.row22 .m-sxsqe view.active::before {
+	content: "";
+	background: url(https://img.jianzhimao.com/static/m3/static/css/img/cur.png?v=cbc9a46) right center no-repeat;
+	height: 100%;
+	width: 1.8rem;
+	background-size: .85rem;
+	position: absolute;
+	right: 1rem;
+	top: 0;
+}
+.m-loc-fixed {
+	display: block;
+	top: 225px;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	z-index: 8;
+	background: #000000;
+	opacity: .5;
+	width: 100%;
+	height: 100%;
+}
+.row2 {
+	display: -webkit-box;
+	position: relative;
+	background-color: rgb(255, 255, 255);
+}
+.row2 .slt.active {
+	color: #FE7418;
+}
+.row2 .left,
+row2 .right {
+	position: relative;
+}
+.row2 .left text:after {
+	width: 14px;
+	background: url(https://img.jianzhimao.com/static/m3/static/css/img/sel_type.png?v=c10a641) no-repeat 0 center;
+	background-size: 28px;
+	background-color: white;
+}
+.row2 .left.active text:after {
+	background: url(https://img.jianzhimao.com/static/m3/static/css/img/sel_type.png?v=c10a641) no-repeat right center;
+	background-size: 28px;
+}
+.row2 .left text:after,
+.row2 .right text:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 62px;
+	height: 100%;
+	overflow: hidden;
+}
+.row2 .right text:after {
+	width: 14px;
+	background: url(https://img.jianzhimao.com/static/m3/static/css/img/sel_sqe.png?v=6564b18) no-repeat 0 center;
+	background-size: 30px;
+}
+.row2 .right.active text:after {
+	background: url(https://img.jianzhimao.com/static/m3/static/css/img/sel_sqe.png?v=6564b18) no-repeat right center;
+	background-size: 30px;
+}
+.row2 .slt {
+	-webkit-box-flex: 1;
+	position: relative;
+	height: 2.2rem;
+	line-height: 2.2rem;
+	font-size: .8rem;
+	text-align: center;
+	padding: 0 .3rem;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	box-sizing: border-box;
+}
+.list {
+	padding: .7rem .6rem .7rem 3rem;
+	position: relative;
+}
+.list image {
+	width: 2rem;
+	height: 2rem;
+	display: block;
+	left: .5rem;
+	margin-top: -1rem;
+	top: 50%;
+	position: absolute;
+}
+.list .right {
+	position: relative;
+}
+.list .right .listleft {
+	padding-right: 3.6rem;
+}
+.list .right .listleft .title {
+	font-size: .8rem;
+	color: #333;
+	font-weight: 400;
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.list .right .listleft .view1,
+.list .right .listright view {
+	font-size: .65rem;
+	color: #919191;
+	line-height: 1.4em;
+}
+.list .right .listleft .view1 .time {
+	margin-left: 3%;
+}
+.list .right .listleft .datali,
+.list .right .listright .datali {
+	font-size: .65rem;
+	color: #919191;
+	line-height: 1.4rem;
+	padding-top: 6px;
+}
+.list .right .listleft .tagli {
+	background-color: #fe7418;
+	line-height: .75rem;
+	height: .75rem;
+	padding: 0 .125rem;
+	border-radius: 2px;
+	margin-right: .1rem;
+	color: #fff;
+	font-size: .55rem;
+}
+.list .right .listright {
+	position: absolute;
+	top: 0;
+	right: 0;
+	text-align: right;
+	width: 4.5rem;
+}
+.list .right .listright .num {
+	color: #fe7418;
+	font-size: .9rem;
+}
+.list .right .listright text {
+
+	font-size: 15px;
+}
+.loadmoring {
+	font-size: 15px;
+	color: #555555;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+}
+.loader {
+	position: relative;
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+.demo3 {
+	width: 4px;
+	height: 4px;
+	border-radius: 2px;
+	background: #68b2ce;
+	position: absolute;
+	animation: demo3 linear 0.8s infinite;
+	-webkit-animation: demo3 linear 0.8s infinite;
+}
+.demo3:nth-child(1) {
+	left: 15px;
+	top: 2px;
+	-webkit-animation-delay: 0s;
+	        animation-delay: 0s;
+}
+.demo3:nth-child(2) {
+	left: 24px;
+	top: 6px;
+	-webkit-animation-delay: 0.1s;
+	        animation-delay: 0.1s;
+}
+.demo3:nth-child(3) {
+	left: 27px;
+	top: 15px;
+	-webkit-animation-delay: 0.1s;
+	        animation-delay: 0.1s;
+}
+.demo3:nth-child(4) {
+	left: 23px;
+	top: 24px;
+	-webkit-animation-delay: 0.2s;
+	        animation-delay: 0.2s;
+}
+.demo3:nth-child(5) {
+	left: 15px;
+	top: 26px;
+	-webkit-animation-delay: 0.4s;
+	        animation-delay: 0.4s;
+}
+.demo3:nth-child(6) {
+	left: 6px;
+	top: 23px;
+	-webkit-animation-delay: 0.5s;
+	        animation-delay: 0.5s;
+}
+.demo3:nth-child(7) {
+	left: 2px;
+	top: 15px;
+	-webkit-animation-delay: 0.6s;
+	        animation-delay: 0.6s;
+}
+.demo3:nth-child(8) {
+	left: 6px;
+	top: 6px;
+	-webkit-animation-delay: 0.7s;
+	        animation-delay: 0.7s;
+}
+@keyframes demo3 {
+0%,
+	40%,
+	100% {
+		-webkit-transform: scale(1);
+		        transform: scale(1);
+}
+20% {
+		-webkit-transform: scale(3);
+		        transform: scale(3);
+}
+}
+@-webkit-keyframes demo3 {
+0%,
+	40%,
+	100% {
+		-webkit-transform: scale(1);
+		        transform: scale(1);
+}
+20% {
+		-webkit-transform: scale(3);
+		        transform: scale(3);
+}
+}
+

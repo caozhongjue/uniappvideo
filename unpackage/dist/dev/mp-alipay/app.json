@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/search/search",
+    "pages/profile/profile",
+    "pages/common/common",
+    "pages/zhizhao/zhizhao",
+    "pages/miaorenwu/miaorenwu"
+  ],
+  "subPackages": [],
+  "window": {
+    "titleBarColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "textColor": "#bfbfbf",
+    "selectedColor": "#515151",
+    "backgroundColor": "#FFFFFF",
+    "items": [
+      {
+        "pagePath": "pages/index/index",
+        "name": "首页",
+        "icon": "static/tabBarIco/index.png",
+        "activeIcon": "static/tabBarIco/index_sel.png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "name": "搜索",
+        "icon": "static/tabBarIco/search.png",
+        "activeIcon": "static/tabBarIco/search_sel.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "name": "关于",
+        "icon": "static/tabBarIco/me.png",
+        "activeIcon": "static/tabBarIco/me_sel.png"
+      }
+    ]
+  },
+  "usingComponents": {}
+}
