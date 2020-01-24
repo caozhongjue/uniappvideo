@@ -5,7 +5,8 @@
     "pages/profile/profile",
     "pages/common/common",
     "pages/zhizhao/zhizhao",
-    "pages/miaorenwu/miaorenwu"
+    "pages/miaorenwu/miaorenwu",
+    "pages/detail/detail"
   ],
   "subPackages": [],
   "window": {

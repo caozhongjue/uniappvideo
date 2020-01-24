@@ -101,21 +101,21 @@
 			});
 			this.clickdetail()
 		},
-		onReady() {
-			let that=this;
-			uni.getSystemInfo({ //调用uni-app接口获取屏幕高度
-				success(res) { //成功回调函数
-					that.ph=res.windowHeight //windoHeight为窗口高度，主要使用的是这个
-					console.log("onready"+that.ph)
-					let titleH=uni.createSelectorQuery().select(".scroll-view"); //想要获取高度的元素名（class/id）
-					titleH.boundingClientRect(data=>{
-						that.scrollHeight=data.height  //计算高度：元素高度=窗口高度-元素距离顶部的距离（data.top）
-						console.log("onready"+that.scrollHeight)
-					}).exec()
-				}
-			})
-			this.clickdetail()
-		},
+		// onReady() {
+		// 	let that=this;
+		// 	uni.getSystemInfo({ //调用uni-app接口获取屏幕高度
+		// 		success(res) { //成功回调函数
+		// 			that.ph=res.windowHeight //windoHeight为窗口高度，主要使用的是这个
+		// 			console.log("onready"+that.ph)
+		// 			let titleH=uni.createSelectorQuery().select(".scroll-view"); //想要获取高度的元素名（class/id）
+		// 			titleH.boundingClientRect(data=>{
+		// 				that.scrollHeight=data.height  //计算高度：元素高度=窗口高度-元素距离顶部的距离（data.top）
+		// 				console.log("onready"+that.scrollHeight)
+		// 			}).exec()
+		// 		}
+		// 	})
+		// 	this.clickdetail()
+		// },
 		methods: {
 			scroll() {
 				uni.startPullDownRefresh();
@@ -133,11 +133,9 @@
 						"&prov=&city=%E5%B9%BF%E5%B7%9E&area=&type=&time=",
 					// url: "https://m.jianzhimao.com/job/pageDirect?page=" + this.pagination + "&city=%E5%B9%BF%E5%B7%9E", //仅为示例，并非真实接口地址。
 					method: "GET",
-
 					dataType: 'json',
 					success: (res) => {
 						this.list = res.data.data.list
-
 					}
 				});
 			},
@@ -199,6 +197,7 @@
 </script>
 
 <style>
+
 	.clearfix:after {
 		content: ".";
 		display: block;

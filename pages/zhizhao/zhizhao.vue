@@ -44,7 +44,8 @@
 				work: [],
 				loadingText: '上拉加载更多',
 				scrollHeight: 0,
-				showanimation: false
+				showanimation: false,
+				uri: 'https://m.jianzhimao.com'
 			}
 		},
 		onLoad() {
@@ -55,7 +56,7 @@
 				}
 			})
 			uni.request({
-				url: "https://m.jianzhimao.com/job/pageDirect?page=" + this.pagination + "&city=%E5%B9%BF%E5%B7%9E",
+				url: this.uri+"/job/pageDirect?page=" + this.pagination + "&city=%E5%B9%BF%E5%B7%9E",
 				method: "GET",
 				dataType: "json",
 				success: (res) => {
@@ -73,7 +74,7 @@
 				this.loadingText = '加载中'
 				this.showanimation=true
 				uni.request({
-					url: "https://m.jianzhimao.com/job/pageDirect?page=" + this.pagination + "&city=%E5%B9%BF%E5%B7%9E",
+					url: this.uri+"/job/pageDirect?page=" + this.pagination + "&city=%E5%B9%BF%E5%B7%9E",
 					method: "GET",
 					dataType: 'json',
 					success: (res) => {

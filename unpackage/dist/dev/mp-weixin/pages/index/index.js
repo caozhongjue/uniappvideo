@@ -207,6 +207,21 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 var _default =
 {
   data: function data() {
@@ -215,19 +230,40 @@ var _default =
       list: [],
       pagination: 1,
       loadingText: '上拉加载更多',
-      scrollHeight: 0 };
+      ph: 0,
+      scrollHeight: 0,
+      showanimation: false };
 
   },
   onLoad: function onLoad() {
-    var _this = this;
+    var that = this;
     uni.getSystemInfo({
-      success: function success(res) {
-        _this.scrollHeight = res.windowHeight;
+      success: function success(res) {// res - 各种参数
+        that.scrollHeight = res.windowHeight;
+        console.log("onload" + that.scrollHeight);
       } });
 
     this.clickdetail();
   },
+  // onReady() {
+  // 	let that=this;
+  // 	uni.getSystemInfo({ //调用uni-app接口获取屏幕高度
+  // 		success(res) { //成功回调函数
+  // 			that.ph=res.windowHeight //windoHeight为窗口高度，主要使用的是这个
+  // 			console.log("onready"+that.ph)
+  // 			let titleH=uni.createSelectorQuery().select(".scroll-view"); //想要获取高度的元素名（class/id）
+  // 			titleH.boundingClientRect(data=>{
+  // 				that.scrollHeight=data.height  //计算高度：元素高度=窗口高度-元素距离顶部的距离（data.top）
+  // 				console.log("onready"+that.scrollHeight)
+  // 			}).exec()
+  // 		}
+  // 	})
+  // 	this.clickdetail()
+  // },
   methods: {
+    scroll: function scroll() {
+      uni.startPullDownRefresh();
+    },
     onPullDownRefresh: function onPullDownRefresh() {
       this.pagination = 1;
       this.clickdetail();
@@ -235,23 +271,21 @@ var _default =
         uni.stopPullDownRefresh();
       }, 1000);
     },
-    clickdetail: function clickdetail(e) {var _this2 = this;
+    clickdetail: function clickdetail(e) {var _this = this;
       uni.request({
         url: "https://m.jianzhimao.com/ajax/get-job-list?page=" + this.pagination +
         "&prov=&city=%E5%B9%BF%E5%B7%9E&area=&type=&time=",
         // url: "https://m.jianzhimao.com/job/pageDirect?page=" + this.pagination + "&city=%E5%B9%BF%E5%B7%9E", //仅为示例，并非真实接口地址。
         method: "GET",
-
         dataType: 'json',
         success: function success(res) {
-          _this2.list = res.data.data.list;
-
+          _this.list = res.data.data.list;
         } });
 
     },
-    lower: function lower(e) {var _this3 = this;
+    lower: function lower(e) {var _this2 = this;
       this.pagination = this.pagination + 1;
-
+      this.showanimation = true;
       this.loadingText = '加载中';
       uni.request({
         url: "https://m.jianzhimao.com/ajax/get-job-list?page=" + this.pagination +
@@ -262,11 +296,13 @@ var _default =
         success: function success(res) {
 
           if (res.data.data.length <= 0) {
-            _this3.loadingText = '我是有底线的';
+            _this2.loadingText = '我是有底线的';
+            _this2.showanimation = false;
             return false;
           }
-          _this3.list = _this3.list.concat(res.data.data.list),
-          _this3.loadingText = '上拉加载更多';
+          _this2.list = _this2.list.concat(res.data.data.list),
+          _this2.loadingText = '上拉加载更多';
+          _this2.showanimation = false;
 
         } });
 

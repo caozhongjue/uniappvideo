@@ -10,6 +10,9 @@
 		<view class="desc">
 			<text >本来想做成小程序的，但首页那个数据的api接口在小程序上出问题，拿不到数据，只能玩玩android和h5了</text>
 		</view>
+		<view class="desc">
+			<text >傻逼小程序有两条接口用不了</text>
+		</view>
 	</view>
 </template>
 

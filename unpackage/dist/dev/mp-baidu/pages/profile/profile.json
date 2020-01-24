@@ -1,4 +1,6 @@
 {
+  "navigationBarTitleText": "关于",
+  "navigationBarBackgroundColor": "#F0AD4E",
   "component": true,
   "usingComponents": {}
 }

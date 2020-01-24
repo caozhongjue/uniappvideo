@@ -1,15 +1,35 @@
 
 .content{
+	width:100%;
+	height: auto;
+}
+.status_bar {
+	height: 25px;  
+	width: 100%;  
+	background-color: #F8F8F8;
+}
+.top_view {  
+	height: 25px;  
+	width: 100%;  
+	position: fixed;  
+	background-color: #F8F8F8;  
+	top: 0;  
+	z-index: 999;
+}
+.content .title{
+	
 	text-align: center;
-	-webkit-box-pack: center;
-	-webkit-justify-content: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
-	-webkit-box-align: center;
-	-webkit-align-items: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+}
+.content .desc{
+	font-size: 15px;
+	padding: 0 8px;
+	padding-top: 5px;
+	text-indent: 25px;
+}
+.content .desc text{
+	
+	line-height: 25px;
 }
 
 
-/*# sourceMappingURL=../../../.sourcemap/mp-baidu/pages/profile/profile.js.map*/
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vRDovaHRtbHdlYmFwcC91bmlhcHB2aWRlby91bmlhcHB2aWRlby9wYWdlcy9wcm9maWxlL3Byb2ZpbGUudnVlP2ZlMzgiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQSxjO0FBQ0EsYTtBQUNBO0FBQ0E7QUFDQSxXO0FBQ0EsYztBQUNBLGE7QUFDQSxpQjtBQUNBLDJCO0FBQ0EsUTtBQUNBO0FBQ0E7QUFDQTs7QUFFQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7O0FBRUE7QUFDQSIsImZpbGUiOiJwYWdlcy9wcm9maWxlL3Byb2ZpbGUuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiXG4uY29udGVudHtcblx0d2lkdGg6MTAwJTtcblx0aGVpZ2h0OiBhdXRvO1xufVxuLnN0YXR1c19iYXIge1xuXHRoZWlnaHQ6IDI1cHg7ICBcblx0d2lkdGg6IDEwMCU7ICBcblx0YmFja2dyb3VuZC1jb2xvcjogI0Y4RjhGODtcbn1cbi50b3BfdmlldyB7ICBcblx0aGVpZ2h0OiAyNXB4OyAgXG5cdHdpZHRoOiAxMDAlOyAgXG5cdHBvc2l0aW9uOiBmaXhlZDsgIFxuXHRiYWNrZ3JvdW5kLWNvbG9yOiAjRjhGOEY4OyAgXG5cdHRvcDogMDsgIFxuXHR6LWluZGV4OiA5OTk7XG59XG4uY29udGVudCAudGl0bGV7XG5cdFxuXHR0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG4uY29udGVudCAuZGVzY3tcblx0Zm9udC1zaXplOiAxNXB4O1xuXHRwYWRkaW5nOiAwIDhweDtcblx0cGFkZGluZy10b3A6IDVweDtcblx0dGV4dC1pbmRlbnQ6IDI1cHg7XG59XG4uY29udGVudCAuZGVzYyB0ZXh0e1xuXHRcblx0bGluZS1oZWlnaHQ6IDI1cHg7XG59XG4iXSwic291cmNlUm9vdCI6IiJ9*/
